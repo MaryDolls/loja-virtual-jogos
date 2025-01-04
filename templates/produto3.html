@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="produto-detalhe">
+    <div class="imagem">
+        <img src="/static/images/jogo3.jpg" alt="{{ produto.nome }}">
+    </div>
+    <div class="descricao">
+        <h2>{{ produto.nome }}</h2>
+        <p>{{ produto.descricao }}</p>
+        <p>Preço: {{ produto.preco }}</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="comentarios">
+        <h3>Comentários e Avaliações</h3>
+        <textarea placeholder="Deixe seu comentário..."></textarea>
+        <button class="botao">Enviar</button>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="produtos">
+    {% for produto in produtos %}
+    <div class="card">
+        <!-- Exibição da imagem diretamente do link -->
+        <img src="{{ produto.imagem }}" alt="{{ produto.nome }}" class="imagem-produto">
+
+        <h2>{{ produto.nome }}</h2>
+        <p>{{ produto.descricao }}</p>
+        <p>{{ produto.preco }}</p>
+        <a href="{{ url_for('produto', id=produto.id) }}" class="botao">Ver Detalhes</a>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}
