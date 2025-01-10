@@ -66,3 +66,18 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
+
+.produto-imagem {
+    width: 200px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+}
+
+.produto-imagem {
+    max-width: 100%; /* Limita a largura ao tamanho do contêiner */
+    height: auto; /* Altura proporcional à largura */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+}

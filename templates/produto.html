@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <section class="produto-detalhe">
     <div class="imagem">
-        <img src="/static/images/jogo1.jpg" alt="{{ produto.nome }}">
+        <img src="{{ produto.imagem }}" alt="{{ produto.nome }}" class="produto-imagem">
+
     </div>
     <div class="descricao">
         <h2>{{ produto.nome }}</h2>
         <p>{{ produto.descricao }}</p>
         <p>Preço: {{ produto.preco }}</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>{{ produto.detalhes }}</p>
     </div>
     <div class="comentarios">
         <h3>Comentários e Avaliações</h3>

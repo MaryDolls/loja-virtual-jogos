@@ -1,12 +1,9 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <section class="produtos">
     {% for produto in produtos %}
     <div class="card">
-        <!-- Exibição da imagem diretamente do link -->
-        <img src="{{ produto.imagem }}" alt="{{ produto.nome }}" class="imagem-produto">
-
+        <img src="{{ produto.imagem }}" alt="{{ produto.nome }}" class="produto-imagem">
         <h2>{{ produto.nome }}</h2>
         <p>{{ produto.descricao }}</p>
         <p>{{ produto.preco }}</p>
